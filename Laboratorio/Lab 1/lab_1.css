@@ -1,0 +1,63 @@
+#cabecera{
+	width: 900px;
+	height: 200px;
+    border: solid #0F243E 1.0pt;
+    mso-border-themecolor: text2;
+    mso-border-themeshade: 128;
+    mso-border-alt: solid #0F243E .5pt;
+    mso-border-themecolor: text2;
+    mso-border-themeshade: 128;
+    background: #B8CCE4;
+    mso-background-themecolor: accent1;
+    mso-background-themetint: 102;
+    padding: 0in 5.4pt 0in 5.4pt;
+}
+#tablas{
+	width: 120px;
+    border: solid #0F243E 1.0pt;
+    mso-border-themecolor: text2;
+    mso-border-themeshade: 128;
+    border-top: none;
+    mso-border-top-alt: solid #0F243E .5pt;
+    mso-border-top-themecolor: text2;
+    mso-border-top-themeshade: 128;
+    mso-border-alt: solid #0F243E .5pt;
+    mso-border-themecolor: text2;
+    mso-border-themeshade: 128;
+    background: #404040;
+    mso-background-themecolor: text1;
+    mso-background-themetint: 191;
+    padding: 0in 5.4pt 0in 5.4pt;
+    float: left;
+}
+#cuerpo{
+	width: 780px;
+    /*height: 310px; -> habia un problema con la tabla de ddistribucion de horarios*/
+    border-top: none;
+    border-left: none;
+    border-bottom: solid #0F243E 1.0pt;
+    mso-border-bottom-themecolor: text2;
+    mso-border-bottom-themeshade: 128;
+    border-right: solid #0F243E 1.0pt;
+    mso-border-right-themecolor: text2;
+    mso-border-right-themeshade: 128;
+    mso-border-top-alt: solid #0F243E .5pt;
+    mso-border-top-themecolor: text2;
+    mso-border-top-themeshade: 128;
+    mso-border-left-alt: solid #0F243E .5pt;
+    mso-border-left-themecolor: text2;
+    mso-border-left-themeshade: 128;
+    mso-border-alt: solid #0F243E .5pt;
+    mso-border-themecolor: text2;
+    mso-border-themeshade: 128;
+    background: #F2F2F2;
+    mso-background-themecolor: background1;
+    mso-background-themeshade: 242;
+    float: left;
+}
+#tabla {
+    width: 100px;
+    height: 40px;
+    background: #F2F2F2;
+    border-bottom: #000000;
+}
