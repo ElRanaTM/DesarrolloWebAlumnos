@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function ecuacion() {
+			var a = parseInt(document.getElementById('txta').value);
+			var b = parseInt(document.getElementById('txtb').value);
+			var c = parseInt(document.getElementById('txtc').value);
+			var discriminante = Math.pow(b, 2) - 4*a*c
+			if(discriminante < 0){
+				console.log("Resultado imaginario!, la discriminante vale: ", discriminante);
+			}
+			else{
+				var x1 = (-b + Math.sqrt(discriminante))/(2*a);
+				var x2 = (-b - Math.sqrt(discriminante))/(2*a);
+				console.log(x1, x2);
+				document.getElementById('txtx1').value = x1
+				document.getElementById('txtx2').value = x2
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1><strong>Ecuación de segundo grado</strong></h1>
+	<label>A</label>
+	<input type="text" name="" id="txta"><br>
+	<label>B</label>
+	<input type="text" name="" id="txtb"><br>
+	<label>C</label>
+	<input type="text" name="" id="txtc"><br>
+	<button onclick="ecuacion()">Calcular</button><br>
+	<label>X1</label>
+	<input type="text" name="" id="txtx1">
+	<label>X2</label>
+	<input type="text" name="" id="txtx2">
+</body>
+</html>

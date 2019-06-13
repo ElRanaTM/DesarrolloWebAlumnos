@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suma JS</title>
+</head>
+<body>
+	<label>A</label>
+	<input id="numero1" type="text" name=""><br>
+	<label>B</label>
+	<input id="numero2" type="text" name=""><br>
+	<button id="clicker">sumar</button>
+	<script type="text/javascript">
+		var clickerButton = document.getElementById("clicker");
+		var n1 = document.getElementById('numero1').value;
+        var n2 = document.getElementById('numero2').value;
+        var suma = parseInt(n1) + parseInt(n2);
+	    // 2. Define the function that will respond to the event.
+	    // callback 
+	    var onButtonClick = function() {
+	        clickerButton.textContent = "La suma esta hecha!";
+	        document.write("<p>La suma es: " + suma + "</p>");
+	        //alert("La suma es:" + suma)
+	    };
+	    // 3. Add the event listener for the element and function
+	    // anonymous "inline"
+	    clickerButton.addEventListener("click", onButtonClick);
+	</script>
+</body>
+</html>

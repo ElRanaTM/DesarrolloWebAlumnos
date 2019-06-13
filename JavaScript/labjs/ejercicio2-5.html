@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function mayor() {
+			var a = parseInt(document.getElementById('txta').value);
+			var b = parseInt(document.getElementById('txtb').value);
+			var c = parseInt(document.getElementById('txtc').value);
+			if(a > b)
+				if(a > c)
+					console.log(a);
+				else
+					if(c > b)
+						console.log(c);
+					else
+						console.log(b);
+			else
+				if(b > c)
+					console.log(b);
+				else
+					console.log(c);
+		}
+		document.getElementById("txta").class = "yellow";
+		
+	</script>
+	<style type="text/css">
+		.hola{
+			background-color: yellow;
+		}
+		#txta{
+			background: white;
+		}
+		#txtb{
+			background: white;
+		}
+		#txtc{
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<h1><strong>Mayor de tres números</strong></h1>
+	<label>A</label>
+	<input type="text" name="" id="txta" class="hola"><br>
+	<label>B</label>
+	<input type="text" name="" id="txtb"><br>
+	<label>C</label>
+	<input type="text" name="" id="txtc"><br>
+	<button onclick="mayor()">Calcular</button><br>
+</body>
+</html>
